@@ -1,1 +1,28 @@
-hello world!
+int a = 5
+int b = 3
+if(a + b > 10)
+{
+Console.Writeline(The answer is greater than 10)
+}
+else
+{
+Console.Writeline(The answer is not greater than 10)
+}
+
+(.cs)
+int p = 5;
+int q = 3;
+
+if (p + q > 6)
+{
+    Console.WriteLine("The answer is greater than 6");
+}
+
+else if (p + q > 4)
+{
+    Console.WriteLine("The answer is between 4 and 7");
+}
+else
+{
+    Console.WriteLine("The answer is smaller than 6");
+}
