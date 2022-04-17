@@ -1,11 +1,57 @@
-Hello World!
-I am Crescent.
+class Program {
+  public static void Main (string[] args) {
+    string JUDG = "2";
+    string NAME = "";
+    string GEND = "";
+    string BIRT = "";
+    string STID = "";
+    
+    do{
+    
+    if (JUDG == "2" || JUDG == "3")
+    {
+    Console.WriteLine ("請輸入姓名:");
+    NAME = Console.ReadLine();
+    }
+      
+    if (JUDG == "2" || JUDG == "4")
+    {
+    Console.WriteLine ("請輸入性別:");
+    GEND = Console.ReadLine();
+    }   
+      
+    if (JUDG == "2" || JUDG == "5")
+    {
+    Console.WriteLine ("請輸入生日:");
+    BIRT = Console.ReadLine();
+    }
+      
+    if (JUDG == "2" || JUDG == "6")
+    {
+    Console.WriteLine ("請輸入學號:");
+    STID = Console.ReadLine();
+    }
 
-NOw I'm at a new branch.
-(Branch1)
+    Console.WriteLine("你的姓名是:" + NAME );
+    Console.WriteLine("你的性別是:" + GEND );
+    Console.WriteLine("你的生日是:" + BIRT );
+    Console.WriteLine("你的學號是:" + STID );
 
-And now I'm going to show how to REVERT.
 
-(add this line and revert it)
+    Console.WriteLine ("資料正確請按1，欲重新輸入請按2");
+    JUDG = Console.ReadLine();
+      
+    if (JUDG == "1")
+    {
+    Console.WriteLine("已完成資料建置");
+    }   
+    else
+    {
+    Console.WriteLine ("修改姓名請按3，修改性別請按4，修改生日請按5，修改學號請按6");
+    JUDG = Console.ReadLine(); 
+    }
+      
+  } while(JUDG == "2" || JUDG == "3" || JUDG == "4" || JUDG == "5" || JUDG == "6");
 
-branch2 MERGE with main.
+  }
+}
